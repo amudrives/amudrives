@@ -1,11 +1,26 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>AMU Drives</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <title>AMU Drives Firebase Login</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+
   <h1>AMU Drives Firebase Login</h1>
+
+  <form id="authForm">
+    <input type="email" id="email" placeholder="Email" required />
+    <input type="password" id="password" placeholder="Password" required />
+
+    <button type="submit" id="loginBtn">Login</button>
+    <button type="button" id="signupBtn">Create Admin</button>
+  </form>
+
+  <button id="logoutBtn" style="display:none">Logout</button>
+
+  <p id="status"></p>
+
   <script type="module" src="firebase-init.js"></script>
   <script type="module" src="script-firebase.js"></script>
 </body>
